@@ -333,6 +333,68 @@
       display: inline;
     }
 
+    /* Books */
+    .books-intro {
+      margin-bottom: 20px;
+      font-size: 1.05rem;
+    }
+
+    .books-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .books-list li {
+      display: flex;
+      gap: 15px;
+      padding: 15px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      transition: box-shadow 0.2s;
+    }
+
+    .books-list li:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .book-cover {
+      flex-shrink: 0;
+      width: 80px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .book-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .books-list strong {
+      font-size: 1rem;
+      line-height: 1.3;
+    }
+
+    .books-list a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    .books-list a:hover {
+      text-decoration: underline;
+    }
+
+    .book-comment {
+      margin-top: 8px;
+      color: #555;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
   </style>
 </head>
 <body>
@@ -502,6 +564,64 @@
       <p>P.S. I am not actively maintaining any of these projects, so they are not available on app or play stores. </p>
 
 
+      </div>
+    </details>
+
+    <!-- Books -->
+    <details class="section-toggle">
+      <summary>Books</summary>
+      <div class="section-content">
+        <p class="books-intro">Here are some of my favorite books that I think everyone should read:</p>
+        <ul class="books-list">
+          <li>
+            <img src="bookcovers/lotr.jpg" alt="The Lord of the Rings" class="book-cover">
+            <div class="book-info">
+              <a href="https://www.goodreads.com/book/show/33.The_Lord_of_the_Rings" target="_blank"><strong>The Lord of the Rings</strong></a>
+              <span>J.R.R. Tolkien</span>
+              <p class="book-comment">The imagination of Tolkien is beyond words. No book has had more moral impact on me than this one.</p>
+            </div>
+          </li>
+          <li>
+            <img src="bookcovers/blindwatchmaker.jpg" alt="The Blind Watchmaker" class="book-cover">
+            <div class="book-info">
+              <a href="https://www.goodreads.com/book/show/117047.The_Blind_Watchmaker" target="_blank"><strong>The Blind Watchmaker</strong></a>
+              <span>Richard Dawkins</span>
+              <p class="book-comment">Dawkins explains how complex beings can arise from a surprisingly simple process. Builds deep intuition for seemingly unintuitive idea.</p>
+            </div>
+          </li>
+          <li>
+            <img src="bookcovers/theselfishgene.jpg" alt="The Selfish Gene" class="book-cover">
+            <div class="book-info">
+              <a href="https://www.goodreads.com/book/show/61535.The_Selfish_Gene" target="_blank"><strong>The Selfish Gene</strong></a>
+              <span>Richard Dawkins</span>
+              <p class="book-comment">Classic. My first book that got me fascinated with evolutionary biology.</p>
+            </div>
+          </li>
+          <li>
+            <img src="bookcovers/the%20invention%20of%20nature.jpg" alt="The Invention of Nature" class="book-cover">
+            <div class="book-info">
+              <a href="https://www.goodreads.com/book/show/22055262-the-invention-of-nature" target="_blank"><strong>The Invention of Nature</strong></a>
+              <span>Andrea Wulf</span>
+              <p class="book-comment">Biography of Alexander von Humboldt. His intense curiosity to explore and understand nature is fascinating.</p>
+            </div>
+          </li>
+          <li>
+            <img src="bookcovers/feynman.jpg" alt="Surely You're Joking, Mr. Feynman!" class="book-cover">
+            <div class="book-info">
+              <a href="https://www.goodreads.com/book/show/35167685-surely-you-re-joking-mr-feynman" target="_blank"><strong>Surely You're Joking, Mr. Feynman!</strong></a>
+                <span>Richard Feynman</span>
+              <p class="book-comment">Funniest book I have ever read.</p>
+            </div>
+          </li>
+          <li>
+            <img src="bookcovers/matt_rid.jpg" alt="How Innovation Works" class="book-cover">
+            <div class="book-info">
+              <a href="https://www.goodreads.com/book/show/45449488-how-innovation-works" target="_blank"><strong>How Innovation Works</strong></a>
+              <span>Matt Ridley</span>
+              <p class="book-comment">A must read for engineers or those involved in technology. Ridley explains the evolutionary nature of innovation contrary to the "Eureka!" myth.</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </details>
 
